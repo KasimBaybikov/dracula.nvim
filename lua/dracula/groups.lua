@@ -82,8 +82,8 @@ local function setup(configs)
       CursorLine = { bg = colors.selection, },
       ColorColumn = { bg = colors.selection, },
 
-      StatusLine = { fg = colors.white, bg = colors.black, },
-      StatusLineNC = { fg = colors.comment, },
+      StatusLine = { fg = colors.status_line_fg, bg = colors.status_line_bg, },
+      StatusLineNC = { fg = colors.status_line_no_cur_fg, bg = colors.status_line_no_cur_bg },
       StatusLineTerm = { fg = colors.white, bg = colors.black, },
       StatusLineTermNC = { fg = colors.comment, },
 
@@ -95,7 +95,7 @@ local function setup(configs)
 
       ErrorMsg = { fg = colors.bright_red, },
       VertSplit = { fg = colors.black, },
-      WinSeparator = { fg = colors.black, },
+      WinSeparator = { fg = colors.win_separator, },
       Folded = { fg = colors.comment, },
       FoldColumn = {},
       Search = { fg = colors.black, bg = colors.orange, },
@@ -184,9 +184,9 @@ local function setup(configs)
       ['@markup.strong'] = { fg = colors.orange, bold = true, },     -- bold
       ['@markup.emphasis'] = { fg = colors.yellow, italic = true, }, -- italic
       ['@markup.underline'] = { fg = colors.orange, },
-      ['@markup.heading'] = { fg = colors.pink, bold = true, },        -- title
-      ['@markup.raw'] = { fg = colors.yellow, },                 -- inline code
-      ['@markup.link.url'] = { fg = colors.yellow, italic = true, },      -- urls
+      ['@markup.heading'] = { fg = colors.pink, bold = true, },      -- title
+      ['@markup.raw'] = { fg = colors.yellow, },                     -- inline code
+      ['@markup.link.url'] = { fg = colors.yellow, italic = true, }, -- urls
       ['@markup.link'] = { fg = colors.orange, bold = true, },
 
       ['@tag'] = { fg = colors.cyan, },
@@ -298,7 +298,7 @@ local function setup(configs)
       TelescopeResultsDiffAdd = { fg = colors.green },
 
       -- Flash
-      FlashLabel =  { bg = colors.red, fg = colors.bright_white },
+      FlashLabel = { bg = colors.red, fg = colors.bright_white },
 
       -- NvimTree
       NvimTreeNormal = { fg = colors.fg, bg = colors.menu, },
@@ -482,8 +482,8 @@ local function setup(configs)
 
       -- Rainbow delimiter
       RainbowDelimiterRed = { fg = colors.fg },
-      RainbowDelimiterYellow = {fg = colors.pink },
-      RainbowDelimiterBlue = {fg = colors.cyan },
+      RainbowDelimiterYellow = { fg = colors.pink },
+      RainbowDelimiterBlue = { fg = colors.cyan },
       RainbowDelimiterOrange = { fg = colors.green },
       RainbowDelimiterGreen = { fg = colors.purple },
       RainbowDelimiterViolet = { fg = colors.orange },

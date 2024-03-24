@@ -24,4 +24,9 @@ return {
    nontext = "#3B4048",
    white = "#ABB2BF",
    black = "#191A21",
+   win_separator = "#24272c",
+   status_line_fg = "#8ef593",
+   status_line_bg = "#25272f",
+   status_line_no_cur_fg = "#5e61aa",
+   status_line_no_cur_bg = "#1e2029",
 }
