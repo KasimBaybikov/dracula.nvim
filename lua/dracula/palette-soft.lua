@@ -33,4 +33,5 @@ return {
    status_line_bg = "#25272f",
    status_line_no_cur_fg = "#5e61aa",
    status_line_no_cur_bg = "#1e2029",
+   debug_cur_line = "#101b0f"
 }
